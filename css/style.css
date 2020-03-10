@@ -1,0 +1,751 @@
+﻿@font-face { /* Définition d'une nouvelle police nommée quicksand */
+    font-family:'quicksand';
+    src: url('quicksand/Quicksand_Bold.otf');
+}
+
+body {
+  font-family:'quicksand', verdana, sans-serif;
+  margin:0px;
+  background-color: #F0F8FF;
+  font-size: 15px;
+}
+
+.banniere {
+  display:flex;
+  width:100%;
+  height:220px;
+  background-color:#00001e;
+  margin:0px;
+  padding:0px;
+}
+.photo_profil{
+  position:absolute;
+  left:30px;
+  top:30px;
+  width:150px;
+  height:150px;
+  background-image:url(../img/User_Avatar_2.png);
+}
+.photo_profil a{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.photo_profil img{
+  width:100%;
+  height:100%;
+  display:block;
+  border-radius: 50%;
+}
+.logo {
+  display:flex;
+  width:300px;
+  height:193px;
+  margin:auto;
+ background-image:url(../img/logo.png);
+}
+
+.connexion {
+  position:absolute;
+  left:40px;
+  top:120px;
+  width:180px;
+  height:50px;
+  line-height:50px;
+  background-color:#BBB7B7;
+  color: #0E53F4;
+  text-align:center;
+  margin:auto;
+  font-size:1.2em;
+}
+
+.connexion:hover {
+  text-decoration:none;
+  background-color:#FFF0F5;
+  color: #0000CD;
+}
+.connexion a:visited{
+  color: #0E53F4;
+}
+
+.deconnexion {
+  position:absolute;
+  right:40px;
+  top:120px;
+  width:180px;
+  height:50px;
+  line-height:50px;
+  background-color:#BBB7B7;
+  color: #0E53F4;
+  text-align:center;
+  margin:auto;
+  font-size:1.2em;
+  text-decoration:none;
+
+}
+
+.deconnexion:hover {
+  text-decoration:none;
+  background-color:#FFF0F5;
+  color: #0000CD;
+}
+
+.deconnexion a:visited{
+  color: #0E53F4;
+}
+
+h1 {
+  font-size: 40px;
+  height:100px;
+  text-align:center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align:center;
+}
+.bienvenue {
+  position:relative;
+  text-align:center;
+  width:100%;
+  line-height:30px;
+
+}
+.text {
+  position:relative;
+  font-size:25px;
+  width:50%;
+  height:200px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.construct {
+font-size:80px;
+text-align:center;
+}
+.champs {
+  font-size:20px;
+  margin-left:20px;
+}
+li a {
+  text-decoration: none;
+  color: #0E53F4;
+  height:100%;
+  display:block;
+  text-align:center;
+}
+
+nav {
+  display:flex;
+  width:100%;
+  height:60px;
+}
+
+ul {
+  margin:0;
+  padding:0;
+  display:flex;
+  position:relative;
+  height:100%;
+  width:100%;
+  justify-content:space-around;
+
+}
+
+nav li {
+  position:relative;
+  display:block;
+  list-style: none;
+  height:100%;
+  width:100%;
+  font-size:1.5em;
+  text-align:center;
+  line-height:50px;
+  transition: 0.25s;
+}
+
+nav li:hover {
+  background-color:#00001e;
+  font-size:1.5em;
+  text-align:center;
+  transition: 0.6s;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px black;
+}
+
+#footer {
+  position:fixed;
+  width:100%;
+  bottom:0;
+  text-align:center;
+  background-color:#00001e;
+  color:#0E53F4;
+}
+
+/* ########### FORM ######## */
+form {
+  display:grid;
+  position:relative;
+  background-color: #F0F8FF;
+  border:1px solid grey;
+  margin:10px 0;
+  padding:5px;
+  margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  height:50%;
+  color:grey;
+  font-size:15px;
+  font-weight:bold;
+
+}
+form input {
+  margin:2px;
+}
+form input[type=button], form input[type=submit] {
+  background-color: #0E53F4;
+  height:50px;
+  width: 70%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  margin-bottom:10px;
+  border:1px solid white;
+  color:rgb(255,255,255);
+  transition:0.1s;
+  cursor: pointer;
+}
+form input[type=button]:hover, form input[type=submit]:hover {
+color: black;
+}
+form h3 {
+  padding:0;
+  text-align: center;
+  color:#0E53F4;
+}
+
+form p {
+  text-align:center;
+  font-size:10px;
+}
+
+/* FORMULAIRE CONNEXION */
+ form .form_connexion{
+   top:100px;
+}
+
+/* FORMULAIRE CONTACT */
+
+  form.form_contact{
+    top:40px;
+  }
+  form.form_contact input[type=email] {
+    height:80%;
+    width:50%;
+  }
+  form.form_contact textarea{
+    margin-top:40px;
+    margin-right:auto;
+    margin-left:auto;
+    width: 80%;
+}
+textarea[name=message]
+{
+ resize : both;
+ min-width : 300px;
+ min-height : 200px;
+ max-width : 400px;
+ max-height : 400px;
+}
+/* FORMULAIRE PROFIL */
+  form.profil {
+    display:block;
+    padding:0px;
+    margin:auto;
+    width:80%;
+    height:100%;
+    border: none;
+    line-height:60px;
+  }
+  form.profil input {
+    margin:10px;
+  }
+  form.profil input[type=submit] {
+    width:50%;
+    margin-right: 30%;
+    margin-left: 25%;
+  }
+  form.motdepasse {
+
+    width:300px; /* A toi de donner la bonne largeur */
+    height:300px; /* A toi de donner la bonne hauteur */
+    margin-top:5%;
+    border:none;
+  }
+
+  form.renvoi_mdp {
+    height:20%;
+    width:25%;
+  }
+  form.renvoi_mdp input[type=email] {
+    height:70%;
+    width:80%;
+    text-align:center;
+    margin:auto;
+  }
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color:blue;
+}
+
+.cadre_profil {
+  position:relative;
+  top:100px;
+  display:flex;
+  width:80%;
+  height:80%;
+  margin:auto;
+  border: 1px black solid;
+  margin-bottom:50px;
+}
+.cadre_profil em {
+  font-size:18px;
+}
+.modifiable {
+  width:50%;
+}
+.dashed {
+  border: 1px black dashed;
+  margin:-1px;
+  width:50%;
+  color:grey;
+  font-size:15px;
+}
+.radio {
+  position:relative;
+  height:10px;
+  width:10px;
+}
+.forme {
+  text-align:center;
+  line-height:50px;
+  height:100%;
+  width:100%;
+  top:20%;
+}
+
+.licence_profile {
+
+}
+.succes_echec {
+  color:red;
+  font-size:0.7rem;
+}
+input#photo {
+  display:none
+}
+label em {
+  text-decoration:underline;
+  cursor:pointer;
+}
+.mail_profile span, .licence_profile span, #classement_profile{
+  color:black;
+}
+.legende {
+  font-size:10px;
+}
+
+.equipess {
+  position:relative;
+  display:flex;
+  width:100%;
+  height:100%;
+  margin:auto;
+  text-align:center;
+}
+
+.premiere_partie {
+  padding:0px;
+  margin:auto;
+  width:30%;
+}
+
+.deuxieme_partie {
+  width:30%;
+}
+.troisieme_partie {
+  width:30%;
+}
+
+/* .equipe1 img:hover, .equipe3 img:hover, .equipe6 img:hover, .equipe7 img:hover {
+
+  width: 268px;
+	height: 250px;
+} */
+
+.equipess a {
+  display:block;
+  width:100%;
+  line-height:50px;
+  text-align:center;
+  vertical-align:middle;
+  color:#0D53F4;
+  text-decoration:none;
+}
+
+.equipess a:hover {
+  color:#0D53F4;
+  background-color:#00001e;
+  font-size:1.5em;
+  text-align:center;
+  transition: 0.6s;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px black;
+  }
+
+.equipess{
+  text-align:center;
+}
+.equipe1, .equipe2, .equipe3, .equipe4, .equipe5, .equipe6, .equipe7 {
+  width:50%;
+
+}
+/* ########## POPUP ########## */
+#popup {
+  position:absolute;
+  visibility: hidden;
+  opacity:0;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  transition:0.2s;
+}
+#popup.actif {
+  visibility: visible;
+  opacity:1;
+}
+#popup section {
+  position:absolute;
+  visibility: hidden;
+  opacity:0;
+  left:calc(50% - 250px);
+  top:25%;
+  width:500px;
+  min-height:50px;
+  background-color: rgba(0,0,0,0.75);
+  box-shadow: 0 0 24px rgba(255,0,0,1);
+  border:1px solid red;
+  font-weight: bold;
+  text-shadow: 0 0 24px red;
+  color:red;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#popup section ul {
+  list-style: none;
+}
+#popup.actif section {
+  visibility: visible;
+  animation: popup 2.1s;
+  opacity:80;
+}
+form profil, section {
+  box-sizing: border-box;
+  min-width:500px;
+  padding:20px;
+  background-color: var(--coul_fnd);
+  box-shadow: 0 0 24px rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  color:white;
+}
+section table {
+  box-sizing: border-box;
+  width:100%;
+  border-collapse: collapse;
+  border: 1px solid white;
+  margin:0;
+  padding:0;
+}
+section table thead th {
+  padding:10px 20px;
+}
+section table tbody tr:not(.vide) {
+  background-color: var(--coul_menu);
+  cursor: pointer;
+  transition:0.25s;
+}
+section table tbody tr:not(.vide):hover {
+  background-color: var(--coul_menu_actif);
+}
+section table tbody td {
+  border:1px solid white;
+  padding:10px;
+}
+section form table tbody td {
+  padding:0;
+}
+section form table tbody td input {
+  margin:2px;
+}
+section table tbody tr.vide td {
+  text-align: left;
+  padding:5px;
+  color:white;
+}
+section table tbody tr.vide td.photo {
+  min-width:300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yess {
+  color:green;
+}
+h4 {
+text-align:center;
+font-size:20px;
+color:green;
+}
+
+.code_verif{
+  text-align:center;
+}
+.newmdp {
+text-align:center;
+}
+.errorr {
+  color:red;
+  margin:auto;
+}
+
+/*  ####################################### POUR MOBILE #########################################*/
+@media screen and (max-width: 1024px)
+{
+  * {
+		box-sizing: border-box;
+	}
+  body {
+    font-size:30px;
+    width: auto;
+		margin: 0;
+		padding: 0;
+  }
+  .bienvenue {
+    display:block;
+    margin:auto;
+    top:200px;
+  }
+  p.text {
+    font-size:30px;
+    margin:auto;
+    margin-bottom:30px;
+
+  }
+  h2 {
+    margin-top: 100px;
+  }
+
+  	img, table, td,	textarea,	input,{
+  		max-width: 100%;
+  	}
+    img {
+		height: auto;
+	}
+
+  textarea,	table, td,	th,{
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+  #footer {
+      position:fixed;
+      height:60px;
+      font-size:30px;
+      bottom:0;
+      text-align:center;
+      background-color:#00001e;
+      color:#0E53F4;
+  }
+
+  .connexion {
+    position:absolute;
+    left:40px;
+    top:50px;
+    width:200px;
+    height:100px;
+    line-height:100px;
+    background-color:#BBB7B7;
+    color: #0E53F4;
+    text-align:center;
+    margin:auto;
+  }
+
+  .connexion:hover {
+    text-decoration:none;
+    background-color:#FFF0F5;
+    color: #0000CD;
+  }
+  .connexion a:visited{
+    color: #0E53F4;
+  }
+
+  .deconnexion {
+    position:absolute;
+    right:40px;
+    top:80px;
+    width:250px;
+    height:80px;
+    line-height:80px;
+    background-color:#BBB7B7;
+    color: #0E53F4;
+    text-align:center;
+    margin:auto;
+    text-decoration:none;
+
+  }
+
+  .deconnexion:hover {
+    text-decoration:none;
+    background-color:#FFF0F5;
+    color: #0000CD;
+  }
+
+  .deconnexion a:visited{
+    color: #0E53F4;
+  }
+
+      .banniere {
+        display:flex;
+        width:100%;
+        background-color:#00001e;
+        margin:0px;
+        padding:0px;
+    }
+
+    nav {
+      height: 150px;
+    }
+    nav li {
+      position:relative;
+      list-style: none;
+      height:100%;
+      width:100%;
+      font-size:2.1em;
+      text-align:center;
+      line-height:150px;
+      transition: 0.25s;
+    }
+
+    nav li:hover {
+      background-color:#00001e;
+      font-size:1.5em;
+      text-align:center;
+      transition: 0.6s;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px black;
+    }
+    a {
+      font-size: 30px;
+    }
+    .premiere_partie, .deuxieme_partie, .troisieme_partie {
+      height: 1000px;
+      line-height: 300px;
+      width:33%;
+      margin:auto;
+      text-align:center;
+    }
+    .equipe1, .equipe2, .equipe3, .equipe4, .equipe5, .equipe6, .equipe7 {
+      width:100%;
+    }
+    .cadre_profil {
+      position:relative;
+      text-align:center;
+      margin:auto;
+      border : none;
+    }
+    .forme {
+      position:absolute;
+      left:4%;
+      top:150px;
+    }
+    .modifiable {
+      display:none;
+    }
+    .cadre_profil em {
+      font-size:30px;
+    }
+    .dashed {
+      border:none;
+    }
+    span, span.legende{
+      font-size:25px;
+    }
+    .classement_profil {
+      font-size:30px;
+    }
+    /* FORMULAIRE CONTACT */
+
+      form.form_contact{
+        top:40px;
+        width:600px;
+        height:700px;
+      }
+
+      form.form_contact input {
+        font-size: 25px;
+        height:100%;
+        width:100%;
+        border:1px solid black;
+
+      }
+      form.form_contact textarea{
+
+        font-size:30px;
+        border:1px solid black;
+        text-align:center;
+
+
+    }
+    .title-element {
+      display:none;
+    }
+    .renvoi_mot_de_passe {
+      display:none;
+    }
+
+    textarea[name=message]
+    {
+     resize : both;
+     /* min-width : 250px;
+     min-height : 200px;
+     max-width : 250px;
+     max-height : 400px; */
+    }
+    form.form_connexion {
+      top:100px;
+      width:650px;
+      height:600px;
+    }
+    form.form_connexion input{
+      font-size:25px;
+    }
+    form.form_connexion h3{
+      font-size:33px;
+    }
+    form.form_connexion p {
+      display:none;
+      margin:auto;
+    }
+    form input[name=connecter] {
+      position:relative;
+      height:100px;
+      top:20px;
+    }
+}
